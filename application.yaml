@@ -12,7 +12,11 @@ spec:
   source:
     repoURL: https://github.com/RajavamshiA/argocd-deployment.git
     targetRevision: main   # or a tag/commit hash
-    path: namespaces        # folder in repo with Kubernetes YAMLs
+    path: .    # folder in repo with Kubernetes YAMLs
+    helm:
+      releaseName: mysql
+      valueFiles: 
+      - values.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd
