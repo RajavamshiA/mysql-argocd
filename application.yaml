@@ -10,7 +10,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/RajavamshiA/argocd-deployment.git
+    repoURL: https://github.com/RajavamshiA/mysql-argocd.git
     targetRevision: main   # or a tag/commit hash
     path: .    # folder in repo with Kubernetes YAMLs
     helm:
