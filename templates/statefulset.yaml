@@ -8,7 +8,7 @@ spec:
     matchLabels:
       app: mysql
       project: expense
-      tier: db # has to match .spec.template.metadata.labels
+      tier: db 
   serviceName: "mysql-headless"
   replicas: {{ .Values.statefulset.replicas }} # by default is 1
   minReadySeconds: 10 # by default is 0
