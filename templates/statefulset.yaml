@@ -33,7 +33,7 @@ spec:
       namespace: expense
     spec:
       accessModes: [ "ReadWriteOnce" ]
-      storageClassName: "local-dev"
+      storageClassName: ""
       resources:
         requests:
           storage: {{ .Values.statefulset.storage }}
